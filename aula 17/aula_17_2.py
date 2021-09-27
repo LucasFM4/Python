@@ -10,7 +10,12 @@ for c in range(0, 5):
 			mai = listanum[c]
 		if listanum[c] < men:
 			men = listanum[c]
-print('(=-)' * 30)
+print('=-' * 30)
 print(f'Você digitou os valores{listanum}')
-print(f'O maior valor digitado foi {mai}')
-print(f'O menor valor digitado foi {men}')
+print(f'O maior valor digitado foi {mai}', end='')
+for i, v in enumerate(listanum):
+	if v == mai:
+		print(f'{i}...', end='')
+print()
+print(f'O menor valor digitado foi {men}', end='')
+ 
